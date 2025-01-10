@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Feedback Form</title>
+</head>
+<body>
+<form action="/Feedback Form" method="POST">
+<label for="Name">Name:</label><br>
+<input type="text" id="Name" name="Name" required><br><br>
+<label for="Email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="Example@domain.com" required><br><br>
+<input type="radio" id="5-star" name="Rate" value="5-star">
+<label for="5-star">5-star</label><br>
+<input type="radio" id="4-star" name="Rate" value="4-star">
+<label for="4-star">4-star</label><br>
+<input type="radio" id="3-star" name="Rate" value="3-star">
+<label for="3-star">3-star</label><br>
+<input type="radio" id="2-star" name="Rate" value="2-star">
+<label for="2-star">2-star</label><br>
+<input type="radio" id="1-star" name="Rate" value="1-star">
+<label for="1-star">1-star</label><br><br>
+<label for="Feedback_type">Feedback Type</label>
+<select name="Feedback_type" id="Feedback_type">
+<option value="Suggestion">Suggestion</option>
+<option value="Bug Report">Bug Report</option>
+<option value="Compliment">Compliment</option>
+</select><br><br>
+<label for="textarea">Feedback:</label><br>
+<textarea id="teat" name="teat" rows="4" cols="50"></textarea><br><br>
+<label for="recommend">Would you recommend us?</label><br>
+<input type="radio" id="recommend-yes" name="recommend" value="yes">
+<label for="recommend-yes">Yes</label><br>
+<input type="radio" id="recommend-no" name="recommend" value="no">
+<label for="recommend-no">No</label><br><br>
+<button type="submit">Submit</button>
+<button type="Reset">Reset</button>
+</form>
+ 
+</body>
+</html>
