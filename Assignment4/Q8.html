@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Online Quiz Submission Form</title>
+</head>
+<body>
+<form action="/submit-quiz" method="POST">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="question1">Question 1: What is the capital of India?</label><br>
+<input type="radio" id="Mumbai" name="question1" value="Mumbai">
+<label for="Mumbai">Mumbai</label><br>
+<input type="radio" id="delhi" name="question1" value="delhi">
+<label for="delhi">delhi</label><br>
+<input type="radio" id="Kolkata" name="question1" value="Kolkata">
+<label for="Kolkata">Kolkata</label><br><br>
+<label for="question2">Question 2: Which of the following is a programming language?</label><br>
+<input type="radio" id="python" name="question2" value="python">
+<label for="python">Python</label><br>
+<input type="radio" id="html" name="question2" value="html">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="question2" value="css">
+<label for="css">CSS</label><br>
+<input type="radio" id="java" name="question2" value="java">
+<label for="java">Java</label><br><br>
+<label for="timer">Time Remaining:</label><br>
+<input type="text" id="timer" name="timer" placeholder="10:00" readonly><br><br>
+<button type="submit">Submit Quiz</button>
+</form>
+</body>
+</html>
