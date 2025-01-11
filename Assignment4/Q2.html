@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Online Event Registration</title>
+</head>
+<body>
+<form action="/online-event" method="POST">
+<label for="Name">Name:</label><br>
+<input type="text" id="Name" name="Name" required><br><br>
+<label for="Email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="Example@domain.com" required><br><br>
+<label for="Number"> Phone number:</label><br>
+<input type="tel" id="number" name="number" required><br><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br><br>
+<label for="Age Group">Select Group:</label>
+<select name="age_group" id="age_group">
+<option value="child">Child</option>
+<option value="Adult">Adult</option>
+</select><br><br>
+<label for="textarea">Additional comments:</label><br>
+<input type="textarea" id="additional_comments" name="additional_comments"><br><br>
+<label for="interests">Select your interests:</label><br>
+<input type="checkbox" id="interest1" name="interest" value="sports">
+<label for="interest1">Sports</label><br>
+<input type="checkbox" id="interest2" name="interest" value="music">
+<label for="interest2">Music</label><br>
+<input type="checkbox" id="interest3" name="interest" value="reading">
+<label for="interest3">Reading</label><br>
+<input type="checkbox" id="interest4" name="interest" value="traveling">
+<label for="interest4">Traveling</label><br><br>
+<button type="submit">Register</button>
+</form>
+ 
+</body>
+</html>
